@@ -1,3 +1,6 @@
+# Pokémon Emerald Legacy Enhanced: Skylar the Gulp's Tweaks Edition
+I saw Pokémon Emerald Legacy Enhanced and liked what I saw of its features a lot. There are a few things that cannot be toggled off in-game here, so making a custom patch with them changed would suffice. This fork is made with me as the target audience and most of this mod is the work of other people.
+
 # Pokémon Emerald Legacy Enhanced
 
 Pokémon Emerald Legacy Enhanced is an fork of Pokémon Emerald Legacy by [TheSmithPlays](https://www.youtube.com/@smithplayspokemon) and his incredible project team aiming to add Quality of Life improvements and updates which do not align with the Legacy project vision, but nonetheless are features which I believe enhances the game.
