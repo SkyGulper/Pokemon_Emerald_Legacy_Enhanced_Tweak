@@ -3,6 +3,7 @@ I saw Pokémon Emerald Legacy Enhanced and liked what I saw of its features a lo
 
 ## Changes
 * Reverted the Amulet Coin and Lucky Egg changes
+* Reverted Beldum family catch rates from 45 to 3
 
 # Pokémon Emerald Legacy Enhanced
 
