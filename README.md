@@ -2,7 +2,7 @@
 I saw Pokémon Emerald Legacy Enhanced and liked what I saw of its features a lot. There are a few things that cannot be toggled off in-game here, so making a custom patch with them changed would suffice. This fork is made with me as the target audience and most of this mod is the work of other people.
 
 ## Changes
-* To be added
+* Reverted the Amulet Coin and Lucky Egg changes
 
 # Pokémon Emerald Legacy Enhanced
 
