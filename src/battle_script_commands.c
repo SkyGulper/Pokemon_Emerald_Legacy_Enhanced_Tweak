@@ -3419,10 +3419,6 @@ static void Cmd_getexp(void)
                 else
                     holdEffect = ItemId_GetHoldEffect(item);
                 
-                // Added Lucky Egg to increase all battle EXP
-                if (holdEffect == HOLD_EFFECT_LUCKY_EGG)
-                    luckyEggCheck = TRUE;
-                
                 if (GetMonData(&gPlayerParty[i], MON_DATA_HP) == 0)
                 continue;
                 
@@ -3439,9 +3435,6 @@ static void Cmd_getexp(void)
             }
 
             calculatedExp = gSpeciesInfo[gBattleMons[gBattlerFainted].species].expYield * gBattleMons[gBattlerFainted].level / 7;
-
-            if (luckyEggCheck)
-                calculatedExp = (calculatedExp * 150) / 100;
 
             if (viaExpShare) // at least one mon is getting exp via exp share or EXP. ALL is turned on
             {
@@ -3519,10 +3512,8 @@ static void Cmd_getexp(void)
                     else if (holdEffect == HOLD_EFFECT_EXP_SHARE)
                         gBattleMoveDamage += gExpShareExp;
 
-                    /* Lucky Egg modification moved to apply to all exp
                     if (holdEffect == HOLD_EFFECT_LUCKY_EGG)
                         gBattleMoveDamage = (gBattleMoveDamage * 150) / 100;
-                    */
 
                     if (gBattleTypeFlags & BATTLE_TYPE_TRAINER)
                         gBattleMoveDamage = (gBattleMoveDamage * 150) / 100;
