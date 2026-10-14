@@ -3438,8 +3438,12 @@ static void Cmd_getexp(void)
 
             for (viaSentIn = 0, i = 0; i < PARTY_SIZE; i++)
             {
-                if (GetMonData(&gPlayerParty[i], MON_DATA_SPECIES) == SPECIES_NONE || GetMonData(&gPlayerParty[i], MON_DATA_IS_EGG))
+                if (GetMonData(&gPlayerParty[i], MON_DATA_SPECIES) == SPECIES_NONE || GetMonData(&gPlayerParty[i], MON_DATA_IS_EGG)
+                    || GetMonData(&gPlayerParty[i], MON_DATA_HP) == 0)
                 continue;
+
+                if (gBitTable[i] & sentIn)
+                    viaSentIn++;
 
                 item = GetMonData(&gPlayerParty[i], MON_DATA_HELD_ITEM);
 
@@ -3448,13 +3452,7 @@ static void Cmd_getexp(void)
                 else
                     holdEffect = ItemId_GetHoldEffect(item);
                 
-                if (GetMonData(&gPlayerParty[i], MON_DATA_HP) == 0)
-                continue;
-                
-                if (gBitTable[i] & sentIn)
-                    viaSentIn++;
-
-                // Added EXP. ALL to EXPShare calculation 
+                // Added EXP. ALL to EXPShare calculation
                 if (FlagGet(FLAG_EXP_ALL)
                     && !(GetMonData(&gPlayerParty[i], MON_DATA_LEVEL) == MAX_LEVEL
                     || levelCappedNuzlocke(GetMonData(&gPlayerParty[i], MON_DATA_LEVEL))))
