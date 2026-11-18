@@ -36,7 +36,6 @@ AlteringCave_EventScript_TryRemoveMewtwo::
 	return
 
 AlteringCave_EventScript_Mewtwo::
-	faceplayer
 	playmoncry SPECIES_MEWTWO, CRY_MODE_ENCOUNTER
 	delay 40
 	waitmoncry

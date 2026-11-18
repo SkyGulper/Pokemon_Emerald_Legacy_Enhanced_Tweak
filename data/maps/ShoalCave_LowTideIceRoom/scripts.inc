@@ -35,7 +35,6 @@ ShoalCave_LowTideIceRoom_EventScript_TryRemoveArticuno::
 	return
 
 ShoalCave_LowTideIceRoom_EventScript_Articuno::
-	faceplayer
 	playmoncry SPECIES_ARTICUNO, CRY_MODE_ENCOUNTER
 	delay 40
 	waitmoncry

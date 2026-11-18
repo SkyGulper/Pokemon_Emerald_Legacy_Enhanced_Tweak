@@ -50,7 +50,6 @@ NewMauville_Inside_EventScript_TryRemoveZapdos::
 	return
 
 NewMauville_Inside_EventScript_Zapdos::
-	faceplayer
 	playmoncry SPECIES_ZAPDOS, CRY_MODE_ENCOUNTER
 	delay 40
 	waitmoncry
