@@ -5,6 +5,7 @@ I saw Pokémon Emerald Legacy Enhanced and liked what I saw of its features a lo
 * Reverted the Amulet Coin and Lucky Egg changes
 * Reverted Beldum family catch rates from 45 to 3
 * Reverted the reduced BP prices for items and move tutor. The items added to Enhanced had their BP prices multiplied to match the costs for the existing items.
+* Changed overworld non-following Pokemon to their original overworld sprites 
 
 # Pokémon Emerald Legacy Enhanced
 
