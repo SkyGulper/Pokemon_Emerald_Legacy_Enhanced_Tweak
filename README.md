@@ -1,6 +1,8 @@
 # Pokémon Emerald Legacy Enhanced: Skylar the Gulp's Tweaks Edition
 I saw Pokémon Emerald Legacy Enhanced and liked what I saw of its features a lot. There are a few things that cannot be toggled off in-game here, so making a custom patch with them changed would suffice. This fork is made with me as the target audience and most of this mod is the work of other people.
 
+NOTE: This fork follows the BETA BRANCH of Legacy Enhanced, at least until the next stable version of it releases (which as of November 22 2026, has not happened).
+
 ## Changes
 * Reverted the Amulet Coin and Lucky Egg changes
 * Reverted Beldum family catch rates from 45 to 3
